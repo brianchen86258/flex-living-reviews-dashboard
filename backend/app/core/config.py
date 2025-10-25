@@ -11,14 +11,31 @@ class Settings(BaseSettings):
 
     # CORS
     FRONTEND_URL: str = "http://localhost:3000"
+    CORS_ORIGINS: str = ""  # Comma-separated list of allowed origins
 
     @property
     def BACKEND_CORS_ORIGINS(self) -> List[str]:
-        return [
+        """Get list of allowed CORS origins"""
+        origins = [
             "http://localhost:3000",
             "http://localhost:3001",
-            self.FRONTEND_URL,
         ]
+
+        # Add FRONTEND_URL
+        if self.FRONTEND_URL:
+            origins.append(self.FRONTEND_URL)
+
+        # Add CORS_ORIGINS from environment (comma-separated)
+        if self.CORS_ORIGINS:
+            additional_origins = [
+                origin.strip()
+                for origin in self.CORS_ORIGINS.split(",")
+                if origin.strip()
+            ]
+            origins.extend(additional_origins)
+
+        # Remove duplicates and return
+        return list(set(origins))
 
     # Hostaway API
     HOSTAWAY_API_KEY: str
