@@ -1,0 +1,68 @@
+import type { PropertyPerformance } from "@/types/property"
+
+export const mockProperties: PropertyPerformance[] = [
+  {
+    property_id: "2B-N1-A",
+    listing_name: "29 Shoreditch Heights",
+    average_rating: 9.2,
+    total_reviews: 30,
+    recent_trend: "improving",
+    ratings_breakdown: {
+      cleanliness: 9.5,
+      communication: 10.0,
+      location: 9.8,
+      value: 8.5,
+      amenities: 9.0,
+    },
+    approved_count: 24,
+    featured_count: 3,
+  },
+  {
+    property_id: "1B-C1-B",
+    listing_name: "Camden Loft",
+    average_rating: 8.8,
+    total_reviews: 25,
+    recent_trend: "stable",
+    ratings_breakdown: {
+      cleanliness: 9.0,
+      communication: 9.5,
+      location: 9.2,
+      value: 8.0,
+      amenities: 8.5,
+    },
+    approved_count: 20,
+    featured_count: 2,
+  },
+  {
+    property_id: "2B-NH-A",
+    listing_name: "Notting Hill Suite",
+    average_rating: 9.5,
+    total_reviews: 35,
+    recent_trend: "improving",
+    ratings_breakdown: {
+      cleanliness: 9.8,
+      communication: 9.7,
+      location: 9.9,
+      value: 9.0,
+      amenities: 9.5,
+    },
+    approved_count: 30,
+    featured_count: 5,
+  },
+  {
+    property_id: "1B-CG-C",
+    listing_name: "Covent Garden Flat",
+    average_rating: 8.5,
+    total_reviews: 20,
+    recent_trend: "declining",
+    ratings_breakdown: {
+      cleanliness: 8.8,
+      communication: 9.0,
+      location: 9.5,
+      value: 7.5,
+      amenities: 8.0,
+    },
+    approved_count: 15,
+    featured_count: 1,
+  },
+]

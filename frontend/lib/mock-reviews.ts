@@ -1,0 +1,148 @@
+import type { Review } from "@/types/review"
+
+export const mockReviews: Review[] = [
+  {
+    id: "1",
+    listing_name: "2B N1 A - 29 Shoreditch Heights",
+    guest_name: "Shane Finkelstein",
+    average_rating: 5,
+    submitted_at: "2024-01-15T10:30:00Z",
+    channel: "Airbnb",
+    is_approved: true,
+    is_featured: true,
+    public_review:
+      "Amazing stay! The apartment was spotless and the location was perfect. Would definitely recommend to anyone visiting London.",
+  },
+  {
+    id: "2",
+    listing_name: "Studio Apartment - Camden",
+    guest_name: "Emily Chen",
+    average_rating: 4.5,
+    submitted_at: "2024-01-14T15:45:00Z",
+    channel: "Booking.com",
+    is_approved: true,
+    is_featured: false,
+    public_review:
+      "Great location and very clean. The host was responsive and helpful. Only minor issue was the noise from the street at night.",
+  },
+  {
+    id: "3",
+    listing_name: "2B N1 A - 29 Shoreditch Heights",
+    guest_name: "Michael Rodriguez",
+    average_rating: 5,
+    submitted_at: "2024-01-13T09:20:00Z",
+    channel: "Airbnb",
+    is_approved: false,
+    is_featured: false,
+    public_review:
+      "Exceptional property! Everything was as described. The amenities were top-notch and the check-in process was seamless.",
+  },
+  {
+    id: "4",
+    listing_name: "Luxury Loft - Shoreditch",
+    guest_name: "Sarah Johnson",
+    average_rating: 4,
+    submitted_at: "2024-01-12T14:10:00Z",
+    channel: "VRBO",
+    is_approved: true,
+    is_featured: true,
+    public_review:
+      "Beautiful loft with great natural light. The kitchen was well-equipped. Would have given 5 stars but the WiFi was a bit slow.",
+  },
+  {
+    id: "5",
+    listing_name: "Studio Apartment - Camden",
+    guest_name: "David Kim",
+    average_rating: 3.5,
+    submitted_at: "2024-01-11T11:30:00Z",
+    channel: "Booking.com",
+    is_approved: false,
+    is_featured: false,
+    public_review:
+      "Decent place for the price. Location is good but the apartment could use some updates. Bathroom was a bit dated.",
+  },
+  {
+    id: "6",
+    listing_name: "Penthouse Suite - Mayfair",
+    guest_name: "Jessica Williams",
+    average_rating: 5,
+    submitted_at: "2024-01-10T16:45:00Z",
+    channel: "Airbnb",
+    is_approved: true,
+    is_featured: true,
+    public_review:
+      "Absolutely stunning! The views were breathtaking and the interior design was impeccable. Worth every penny.",
+  },
+  {
+    id: "7",
+    listing_name: "Cozy Flat - Notting Hill",
+    guest_name: "Robert Taylor",
+    average_rating: 4.5,
+    submitted_at: "2024-01-09T13:20:00Z",
+    channel: "Airbnb",
+    is_approved: true,
+    is_featured: false,
+    public_review:
+      "Charming flat in a great neighborhood. Very comfortable bed and the host left some nice welcome treats.",
+  },
+  {
+    id: "8",
+    listing_name: "Modern Apartment - King's Cross",
+    guest_name: "Amanda Brown",
+    average_rating: 4,
+    submitted_at: "2024-01-08T10:15:00Z",
+    channel: "Booking.com",
+    is_approved: true,
+    is_featured: false,
+    public_review:
+      "Good value for money. Close to the train station which was convenient. Apartment was clean and functional.",
+  },
+  {
+    id: "9",
+    listing_name: "Luxury Loft - Shoreditch",
+    guest_name: "Christopher Lee",
+    average_rating: 5,
+    submitted_at: "2024-01-07T12:40:00Z",
+    channel: "VRBO",
+    is_approved: false,
+    is_featured: false,
+    public_review:
+      "Perfect for our group! Spacious, modern, and in the heart of Shoreditch. The rooftop terrace was a highlight.",
+  },
+  {
+    id: "10",
+    listing_name: "Garden Flat - Chelsea",
+    guest_name: "Michelle Garcia",
+    average_rating: 4.5,
+    submitted_at: "2024-01-06T09:30:00Z",
+    channel: "Airbnb",
+    is_approved: true,
+    is_featured: true,
+    public_review:
+      "Lovely quiet flat with a beautiful private garden. Perfect for a relaxing stay. Host was very accommodating.",
+  },
+  {
+    id: "11",
+    listing_name: "2B N1 A - 29 Shoreditch Heights",
+    guest_name: "James Wilson",
+    average_rating: 3,
+    submitted_at: "2024-01-05T14:20:00Z",
+    channel: "Airbnb",
+    is_approved: false,
+    is_featured: false,
+    public_review:
+      "Location was good but the apartment wasn't as clean as expected. Some maintenance issues with the heating.",
+  },
+  {
+    id: "12",
+    listing_name: "Penthouse Suite - Mayfair",
+    guest_name: "Lisa Anderson",
+    average_rating: 5,
+    submitted_at: "2024-01-04T11:10:00Z",
+    channel: "Booking.com",
+    is_approved: true,
+    is_featured: true,
+    public_review:
+      "Luxury at its finest! Everything was perfect from start to finish. The concierge service was exceptional.",
+  },
+]
